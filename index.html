@@ -12,11 +12,18 @@
                  renderer='logarithmicDepthBuffer: true;'>     
             <a-marker preset='hiro'
                       smooth='true'>
-                <a-entity animation='property: rotation; to: 0 360 0; dur: 9000; loop: true; easing: linear;'>
+                <!--<a-entity animation='property: rotation; to: 0 360 0; dur: 9000; loop: true; easing: linear;'>
                     <a-box position='0 0.5 0' 
                            material='color:pink; opacity: 0.7'> 
                     </a-box> 
-                </a-entity>                            
+                </a-entity> -->
+                <!-- define your gltf asset -->
+                <a-assets>
+                    <a-assets-item id='drone' src='/resources/buster_drone/scene.gltf'></a-assets-item>
+                </a-assets>
+                <!-- use your gltf model -->
+                <a-entity gltf-model="##drone"></a-entity>   
+                <!--test test test-->                             
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
