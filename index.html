@@ -9,14 +9,15 @@
        
         <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'
                  vr-mode-ui='enabled: false;'
-                 renderer='logarithmicDepthBuffer: true;'>     
-            <a-marker preset='hiro'
-                      smooth='true'>
-                <a-assets>
+                 renderer='logarithmicDepthBuffer: true;'>
+                 <a-assets>
                     <a-assets-item id='drone' src='/resources/buster_drone/scene.gltf'></a-assets-item>
                 </a-assets>
-                <a-entity gltf-model="##drone"></a-entity>                                
-            </a-marker>
+                <a-marker preset='hiro'
+                        smooth='true'>
+                    
+                    <a-entity gltf-model="##drone"></a-entity>                                
+                </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
