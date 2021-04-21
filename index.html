@@ -7,9 +7,11 @@
     <script src="js/aframe-extras.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
-            var drone = document.getElementById('drone');
+            var drone = document.querySelector('#drone');
+            console.log('drone: ' + drone.tagName);
             drone.addEventListener('model-loaded',function(){
-                alert('loaded')
+                console.log('loaded');
+                alert('loaded');
             })
         })
     </script>
