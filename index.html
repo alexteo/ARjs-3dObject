@@ -11,8 +11,11 @@
             console.log('drone: ' + drone.tagName);
             drone.addEventListener('model-loaded',function(){
                 console.log('loaded');
-                document.getElementById('div-loader').disabled = true;
-                //alert('loaded');
+                var divS = document.getElementById('div-loader').disabled = true;
+                console.log("div " + divS)
+                divS.disabled = true;
+                divS.remove();
+                alert('loaded');
             })
         })
     </script>
@@ -24,7 +27,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgb(153, 252, 255);
+            background-color: rgb(0, 32, 53);
             z-index: 9999;
             display: flex;
             justify-content: center;
@@ -34,7 +37,7 @@
         .arjs-loader div{
             text-align: center;
             font-size: 1.25em;
-            color: rgb(6, 46, 46);
+            color: rgb(255, 255, 255);
         }
     </style>
 
