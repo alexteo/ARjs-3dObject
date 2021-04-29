@@ -11,13 +11,39 @@
             console.log('drone: ' + drone.tagName);
             drone.addEventListener('model-loaded',function(){
                 console.log('loaded');
-                alert('loaded');
+                document.getElementById('div-loader').disabled = true;
+                //alert('loaded');
             })
         })
     </script>
 
+    <style>
+        .arjs-loader{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(153, 252, 255);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arjs-loader div{
+            text-align: center;
+            font-size: 1.25em;
+            color: rgb(6, 46, 46);
+        }
+    </style>
+
     <body syle='margin : 0px; overflow: hidden;'>
-       
+
+        <div id='div-loader' class='arjs-loader'>
+            <div>Loading, please wait...</div>
+        </div>
+        
         <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'
                  vr-mode-ui='enabled: false;'
                  renderer='logarithmicDepthBuffer: true;'>
