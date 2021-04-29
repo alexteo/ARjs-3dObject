@@ -11,7 +11,7 @@
             console.log('drone: ' + drone.tagName);
             drone.addEventListener('model-loaded',function(){
                 console.log('loaded');
-                var divS = document.getElementById('div-loader').disabled = true;
+                var divS = document.querySelector('#div-loader');
                 console.log("div " + divS)
                 divS.disabled = true;
                 divS.remove();
