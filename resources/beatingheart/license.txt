@@ -1,0 +1,11 @@
+Model Information:
+* title:	Beating Heart shape - animation from spheres
+* source:	https://sketchfab.com/3d-models/beating-heart-shape-animation-from-spheres-06968af6395b45f0a77716958d1bb174
+* author:	zexell (https://sketchfab.com/zexell)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Beating Heart shape - animation from spheres" (https://sketchfab.com/3d-models/beating-heart-shape-animation-from-spheres-06968af6395b45f0a77716958d1bb174) by zexell (https://sketchfab.com/zexell) licensed under SKETCHFAB Standard (https://sketchfab.com/licenses)
